@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lightblue: #b9e7df;
+  --darkblue: #b8e1f5;
+  --darkpink: #ffc4c8;
+  --lightpink: #ffe1e1;
+  --custard: #ffd162;
+  --creme: #faf4e1;
+  --lightgrey: #8f8f8f;
+  --darkgrey: #262626;
+}
+
+h1 {
+  font-family: "KoHo";
+  font-size: 3rem !important;
+  text-shadow: -1px -1px 0 black, 2px 3px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  letter-spacing: 5px;
+}
+
+#dark #buttons {
+  background-color: var(--darkgrey);
+}
+
+#dark .upper {
+  background-color: var(--lightgrey);
+}
+
+#dark .middle {
+  background-color: var(--creme);
+}
+
+#dark .right {
+  background-color: var(--lightpink);
+}
+
+#answer {
+  text-shadow: -1px -1px 0 black, 2px 2px 0 black, -1px 1px 0 black;
+  font-family: "KoHo";
+  font-size: 2rem;
+}
+
+#expression {
+  font-family: "Abel", sans-serif;
+}
+
+#buttons {
+  grid-template-areas:
+    "display display display display"
+    "clear negative percentage divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+  font-family: "Abel", sans-serif;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#percentage {
+  grid-area: percentage;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#add {
+  grid-area: add;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  height: 45px;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.upper {
+  background-color: var(--lightpink);
+}
+
+.middle {
+  background-color: var(--custard);
+}
+
+.right {
+  background-color: var(--darkblue);
+}

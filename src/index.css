@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
